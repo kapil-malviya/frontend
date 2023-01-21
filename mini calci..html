@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project - +-/* on click</title>
+
+<script type="text/javascript">
+function sum(){
+let a,b,c;
+ a=parseFloat(document.getElementById("aa").value);
+ b=parseFloat(document.getElementById("ab").value);
+ c=a+b;
+document.getElementById("a").value=c;
+}
+
+function min(){
+let a,b,c;
+ a=parseFloat(document.getElementById("aa").value);
+ b=parseFloat(document.getElementById("ab").value);
+ d=a-b;
+document.getElementById("a").value=d;
+}
+
+function mul(){
+let a,b,c;
+ a=parseFloat(document.getElementById("aa").value);
+ b=parseFloat(document.getElementById("ab").value);
+ e=a*b;
+document.getElementById("a").value=e;
+}
+
+function div(){
+let a,b,c;
+ a=parseFloat(document.getElementById("aa").value);
+ b=parseFloat(document.getElementById("ab").value);
+ f=a/b;
+document.getElementById("a").value=f;
+}
+</script>
+<style>
+div{border:4px solid grey; background-color:burlywood; padding: 25px; width:300px; height:250px; margin-left:470px; margin-top:150px; border-radius:15px; text-align:center; font-size:22px;}
+button{margin:7px;}
+label{margin:5px; padding:5px;}
+
+</style>
+</head>
+<body>
+
+<header></header>
+
+
+
+<div>
+<label> Enter the first no.</label>  <input type="" name="" id="aa" value=""> <br>
+<label> Enter the second no.</label>  <input type="" name="" id="ab" value=""> <br>
+<button onclick="sum()">Add Them</button>
+<button onclick="min()">Sub Them</button> <br>
+<button onclick="mul()">Mul Them</button>
+<button onclick="div()">Div Them</button>
+
+<p style="text-align:center;"> Result = <br><input type="" name="" id="a"> </p>
+</div>
+</body>
+</html>
