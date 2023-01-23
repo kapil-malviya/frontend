@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table.</title>
+
+<style type="text/css">
+div{border:2px solid; width:1270px; height:290px; border-radius:5px; padding:5px; font-size:20px;}
+p{font-size:24px;}
+input{padding: 5px;}
+</style>
+
+</head>
+<body>
+<div><p><b> Student's FA-2 Report : </b></p><hr>
+<table class="table">
+<tr>
+  <th> Student Name </th>
+  <th> Maths </th>
+  <th> Science </th>
+  <th> English </th>
+  <th> Computer </th>
+  <th> Total </th>
+  <th> Percentage (%)</th>
+</tr>
+<tr>
+  <td> Annu Mehta</td>
+  <td> <input type="" name="" id="a1" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="a2" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="a3" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="a4" value="" placeholder="Enter marks" onblur="sum1()"> </td>
+  <td> <input type="" name="" id="a5" value="" placeholder="" onblur="sum1()"> </td>
+  <td> <input type="" name="" id="a6" value="" placeholder="" onblur="sum1()"> </td>
+</tr>
+<tr>
+  <td> Bunty Soni </td>
+  <td> <input type="" name="" id="b1" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="b2" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="b3" value="" placeholder="Enter marks"> </td>
+  <td><input type="" name="" id="b4" value="" placeholder="Enter marks" onblur="sum2()">  </td>
+  <td> <input type="" name="" id="b5" value="" placeholder="" onblur="sum2()"> </td>
+  <td> <input type="" name="" id="b6" value="" placeholder="" onblur="sum2()"> </td>
+</tr>
+<tr>
+  <td> Centy Modi </td>
+  <td> <input type="" name="" id="c1" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="c2" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="c3" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="c4" value="" placeholder="Enter marks" onblur="sum3()"> </td>
+  <td> <input type="" name="" id="c5" value="" placeholder=" "onblur="sum3()"> </td>
+  <td> <input type="" name="" id="c6" value="" placeholder="" onblur="sum3()"> </td>
+</tr>
+<tr>
+  <td> Domy Baani</td>
+  <td> <input type="" name="" id="d1" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="d2" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="d3" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="d4" value="" placeholder="Enter marks" onblur="sum4()"> </td>
+  <td> <input type="" name="" id="d5" value="" placeholder="" onblur="sum4()"> </td>
+  <td> <input type="" name="" id="d6" value="" placeholder="" onblur="sum4()"> </td>
+</tr>
+
+<tr>
+  <td> Envy Saru</td>
+  <td> <input type="" name="" id="e1" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="e2" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="e3" value="" placeholder="Enter marks"> </td>
+  <td> <input type="" name="" id="e4" value="" placeholder="Enter marks" onblur="sum5()"> </td>
+  <td> <input type="" name="" id="e5" value="" placeholder="" onblur="sum5()"> </td>
+  <td> <input type="" name="" id="e6" value="" placeholder="" onblur="sum5()"> </td>
+</tr>
+
+</table>
+</div>
+<script type="text/javascript">
+
+function sum1(){
+let aa1,aa2,aa3,aa4;
+ aa1=parseFloat(document.getElementById("a1").value);
+ aa2=parseFloat(document.getElementById("a2").value);
+ aa3=parseFloat(document.getElementById("a3").value);
+ aa4=parseFloat(document.getElementById("a4").value);
+ az=aa1+aa2+aa3+aa4;
+document.getElementById("a5").value=az;
+ ax=az/4;
+document.getElementById("a6").value=ax;
+}
+
+
+function sum2(){
+let bb1,bb2,bb3,bb4;
+ bb1=parseFloat(document.getElementById("b1").value);
+ bb2=parseFloat(document.getElementById("b2").value);
+ bb3=parseFloat(document.getElementById("b3").value);
+ bb4=parseFloat(document.getElementById("b4").value);
+ bz=bb1+bb2+bb3+bb4;
+document.getElementById("b5").value=bz;
+ bx=bz/4;
+document.getElementById("b6").value=bx;
+}
+
+
+function sum3(){
+let cc1,cc2,cc3,cc4;
+ cc1=parseFloat(document.getElementById("c1").value);
+ cc2=parseFloat(document.getElementById("c2").value);
+ cc3=parseFloat(document.getElementById("c3").value);
+ cc4=parseFloat(document.getElementById("c4").value);
+ cz=cc1+cc2+cc3+cc4;
+document.getElementById("c5").value=cz;
+ cx=cz/4;
+document.getElementById("c6").value=cx;
+}
+
+
+function sum4(){
+let dd1,dd2,dd3,dd4;
+ dd1=parseFloat(document.getElementById("d1").value);
+ dd2=parseFloat(document.getElementById("d2").value);
+ dd3=parseFloat(document.getElementById("d3").value);
+ dd4=parseFloat(document.getElementById("d4").value);
+ dz=dd1+dd2+dd3+dd4;
+document.getElementById("d5").value=dz;
+ dx=dz/4;
+document.getElementById("d6").value=dx;
+}
+
+
+function sum5(){
+let ee1,ee2,ee3,ee4;
+ ee1=parseFloat(document.getElementById("e1").value);
+ ee2=parseFloat(document.getElementById("e2").value);
+ ee3=parseFloat(document.getElementById("e3").value);
+ ee4=parseFloat(document.getElementById("e4").value);
+ ez=ee1+ee2+ee3+ee4;
+document.getElementById("e5").value=ez;
+ ex=ez/4;
+document.getElementById("e6").value=ex;
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table.</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<style type="text/css">
+div{border:2px solid;}
+</style>  
+<script type="text/javascript">
+function sum(){
+let a,b,c;
+ a=parseFloat(document.getElementById("aa").value);
+ b=parseFloat(document.getElementById("ab").value);
+ c=a+b;
+document.getElementById("a").value=c;
+}
+</script>
+
+
+</head>
+<body>
+<div class="container">
+<table class="table table-hover">
+<tr>
+  <th> Student </th>
+  <th> Subject </th>
+  <th> Marks </th>
+</tr>
+<tr>
+  <td> Adani  </td>
+  <td> Science  </td>
+  <td> <label></label>  <input type="" name="" id="aa" value="" placeholder="Enter marks"> </td>
+</tr>
+<tr>
+  <td> Ambani </td>
+  <td> Science </td>
+  <td> <label></label>  <input type="" name="" id="ab" value="" placeholder="Enter marks"> </td>
+</tr>
+</table>
+<button onclick="sum()">Add Them</button> <br><br>
+<p> Total marks = <input type="" name="" value="" id="a"> </p>
+
+
+</div>
+
+
+</body>
+</html>
