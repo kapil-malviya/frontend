@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>triangle </title>
+<style type="text/css">
+input, button{margin:3px;}
+
+
+</style>
+
+</head>
+<body>
+
+<input id="t1" type="" name="" placeholder="Enter base of Triangle" > <br>
+<input id="t2" type="" name="" placeholder="Enter height of Triangle" > <br>
+<button onclick="tarea()">Area of Triangle</button>
+
+<br><br>
+
+<input id="t3" type="" name="" placeholder="Enter base of Triangle" > <br>
+<input id="t4" type="" name="" placeholder="Enter height of Triangle" > <br>
+<input id="t5" type="" name="" placeholder="Enter hypotenuse of Triangle" > <br>
+<button onclick="tperi()">Perimeter of Triangle</button>
+
+<script type="text/javascript">
+function tarea(){
+let aa1, aa2;
+aa1=parseFloat(document.getElementById("t1").value);
+aa2=parseFloat(document.getElementById("t2").value);
+at=(aa1*aa2)/2;
+document.write(at)
+}
+
+
+
+function tperi(){
+let bb1, bb2, bb3;
+bb1=parseFloat(document.getElementById("t3").value);
+bb2=parseFloat(document.getElementById("t4").value);
+bb3=parseFloat(document.getElementById("t5").value);
+bt=bb1+bb2+bb3;
+document.write(bt)
+}
+
+
+
+</script>
+</body>
+</html>
