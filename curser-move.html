@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+div{height:150px; width:230px; background-color:burlywood; border-radius:8px; text-align:center;
+  font-size:25px; padding:2px; margin:10px;}
+.x{font-size:30px; color:#493107;}
+
+</style>
+</head>
+<body>
+
+<p class="x">Example of onmousemove, onmouseenter and onmouseover.</p>
+
+<div onmousemove="movefun()">
+  <p>Mouse Move</p>
+  <p id="a1">Mouse over me...</p>
+</div>
+
+<div onmouseenter="enterfun()">
+  <p>Mouse Enter</p>
+  <p id="a2">Mouse over me...</p>
+</div>
+
+<div onmouseover="overfun()">
+  <p>Mouse Over</p>
+  <p id="a3">Mouse over me...</p>
+</div>
+
+<script>
+let x = 0;
+let y = 0;
+let z = 0;
+
+function movefun() {
+  document.getElementById("a1").innerHTML = z=z+1;
+}
+
+function enterfun() {
+  document.getElementById("a2").innerHTML = x=x+1;
+}
+
+function overfun() {
+  document.getElementById("a3").innerHTML = y=y+1;
+}
+</script>
+
+</body>
+</html>
